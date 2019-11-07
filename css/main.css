@@ -95,14 +95,14 @@
         text-align: center;
     }
 
-@media (min-width: 925px) {
+@media (min-width: 834px) {
     nav {
         display: inline;
         margin-right: var(--side-padding);
     }
 }
 
-@media (max-width: 924px) {
+@media (max-width: 833px) {
     header, .header-show {
         height: 100px;
         text-align: center;
