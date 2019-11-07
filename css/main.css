@@ -49,6 +49,10 @@
         box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
     }
 
+    #page-content {
+        margin-top: 30px;
+    }
+
     #menu-button {
         display: none;
         float: right;
@@ -68,6 +72,10 @@
 
     #menu-button img:hover {
         filter: invert(60%);
+    }
+
+    #menu-button img:active {
+        width: 28px;
     }
 
     nav {
@@ -127,12 +135,20 @@
     nav {
         width: 100%;
     }
+
+    #page-content {
+        margin-top: 70px;
+    }
 }
 
 @media (max-width: 600px) {
     header {
         position: relative;
         height: 50px;
+    }
+
+    #page-content {
+        margin-top: 0px;
     }
 
     .nav-item {
@@ -167,7 +183,6 @@
     }
 
     nav {
-        text-align: center;
         margin-right: 20px;
     }
 

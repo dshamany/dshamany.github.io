@@ -5,6 +5,7 @@ let header  = document.querySelector('header');
 let navList = document.querySelector('nav ul');
 let menuBtn = document.querySelector('#menu-button');
 let nav     = document.querySelector('nav');
+let pageContent = document.querySelector('#page-content');
 
 // Event listeners
 menuBtn.addEventListener('click', toggleMenu);
@@ -31,7 +32,6 @@ class Page {
     constructor(title, content = ''){
         this.title = title;
         this.content = content;
-        this.link = `#${this.header}`;
     }
 }
 
@@ -45,10 +45,22 @@ function init(){
         li.className = 'nav-item';
         li.setAttribute('onclick', 'toggleMenu()');
         li.style.listStyle = "none";
+        li,addEventListener('click', selectPage)
         a.text = e.toUpperCase();
         li.appendChild(a);
         navList.appendChild(li);
     });
+}
+
+function selectPage(evt){
+    if (evt.target.tagName === 'A'){
+        let src = `${evt.target.innerText.toLowerCase()}.html`;
+        flipPage(src);
+    }
+}
+
+function flipPage(src){
+    pageContent.setAttribute('data', src);
 }
 
 init();
