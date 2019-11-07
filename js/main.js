@@ -20,6 +20,11 @@ function toggleMenu(){
     toggleMenuClass();
 }
 
+function resetElements(){
+    header.className = 'header';
+    nav.className    = 'nav';
+}
+
 let pagesArr = [];
 
 class Page {

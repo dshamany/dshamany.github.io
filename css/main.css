@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Cairo|Exo+2|Shadows+Into+Light|Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Cairo|Exo+2|Shadows+Into+Light|Teko|Righteous|Yeon+Sung&display=swap');
 
     :root {
-        --body-bg: #555;
+        --body-bg: #000000bb;
         --body-font-color: #fff;
         --link-hover: #999;
-
         --side-padding: 10px;
+    }
+
+    html {
+        background-image: url('https://i.pinimg.com/originals/54/a0/8f/54a08f440ac87229c787c4a7d4d7c2e1.jpg');
+        background-position-x: 40%;
     }
 
     a {
@@ -26,10 +30,11 @@
 
     h1 {
         display: inline;
-        font-size: 26px;
-        font-family: 'Cairo', sans-serif;
+        font-size: 24px;
+        font-family: 'Righteous', sans-serif;
         text-transform: uppercase;
         margin-left: var(--side-padding);
+        line-height: 200%;
     }
 
     h3 {
@@ -83,16 +88,22 @@
         padding: 20px;
     }
 
+    main {
+        height: 980px;
+    }
+
     footer {
-        position: absolute;
+        position: relative;
         background-color: black;
         width: 100vw;
-        height: 50px;
+        height: 300px;
         margin: 0;
         left: 0;
         bottom: 0;
         font-size: 16px;
         text-align: center;
+        padding-top: 5px;
+        z-index: 15;
     }
 
 @media (min-width: 834px) {
@@ -110,7 +121,6 @@
 
     .nav-item {
         display: inline;
-        font-size: 18px;
         pointer-events: all;
     }
 
@@ -148,5 +158,22 @@
     #menu-button {
         display: inline;
         font-size: 16px;
+    }
+}
+
+@media (max-width: 320px){
+    header {
+        height: 70px;
+    }
+
+    nav {
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    #menu-button {
+        width: 100%;
+        margin: -10px auto;
+        height: 30px;
     }
 }
