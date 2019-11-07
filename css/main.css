@@ -61,6 +61,10 @@
         filter: invert(100%);
     }
 
+    #menu-button img:hover {
+        filter: invert(60%);
+    }
+
     nav {
         display: inline;
         flex-flow: row;
