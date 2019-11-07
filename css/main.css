@@ -84,19 +84,25 @@
     }
 
     footer {
+        position: absolute;
         background-color: black;
-        padding: 50px;
+        width: 100vw;
+        height: 50px;
+        margin: 0;
+        left: 0;
         bottom: 0;
+        font-size: 16px;
+        text-align: center;
     }
 
-@media (min-width: 801px) {
+@media (min-width: 799px) {
     nav {
         display: inline;
         margin-right: var(--side-padding);
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 798px) {
     header, .header-show {
         height: 100px;
         text-align: center;
@@ -137,10 +143,6 @@
 
     .header-show {
         height: 280px;
-    }
-
-    main {
-        height: 200vh;
     }
 
     #menu-button {
