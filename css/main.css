@@ -1,80 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Cairo|Exo+2|Shadows+Into+Light|Teko&display=swap');
 
-:root {
-    --body-bg: #555;
-    --body-font-color: #fff;
-    --link-hover: #999;
+    :root {
+        --body-bg: #555;
+        --body-font-color: #fff;
+        --link-hover: #999;
 
-    --side-padding: 10px;
-}
-
-a {
-    color: var(--body-font-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--link-hover);
-}
-
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--body-bg);
-    color: var(--body-font-color);
-}
-
-h1 {
-    display: inline;
-    font-size: 26px;
-    font-family: 'Cairo', sans-serif;
-    text-transform: uppercase;
-    margin-left: var(--side-padding);
-}
-
-h3 {
-    text-transform: capitalize;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+        --side-padding: 10px;
     }
 
-nav {
-    display: inline;
-    flex-flow: row;
-    float: right;
-    margin-right: var(--side-padding);
+    a {
+        color: var(--body-font-color);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--link-hover);
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: var(--body-bg);
+        color: var(--body-font-color);
+    }
+
+    h1 {
+        display: inline;
+        font-size: 26px;
+        font-family: 'Cairo', sans-serif;
+        text-transform: uppercase;
+        margin-left: var(--side-padding);
+    }
+
+    h3 {
+        text-transform: capitalize;
+    }
+
+    header, .header-show {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    #menu-button {
+        display: none;
+        float: right;
+        height: 50px;
+        width: 70px;
+        z-index: 5;
+        background-color: transparent;
+        color: #555;
+        border: 0px;
+        text-transform: uppercase;
+    }
+
+    #menu-button img {
+        width: 30px;
+        filter: invert(100%);
+    }
+
+    nav {
+        display: inline;
+        flex-flow: row;
+        float: right;
+        margin-right: var(--side-padding);
+    }
+
+    .nav-item {
+        display: inline;
+        text-transform: uppercase;
+        font-size: 16px;
+        pointer-events: all;
+    }
+
+    .nav-item a {
+        padding: 20px;
+    }
+
+    footer {
+        background-color: black;
+        padding: 50px;
+        bottom: 0;
+    }
+
+@media (min-width: 801px) {
+    nav {
+        display: inline;
+        margin-right: var(--side-padding);
+    }
 }
 
-.nav-item {
-    display: inline;
-    text-transform: uppercase;
-    font-size: 16px;
-    pointer-events: all;
-}
-
-.nav-item a {
-    padding: 20px;
-}
-
-footer {
-    background-color: black;
-    padding: 50px;
-    bottom: 0;
-}
-
-@media (max-width: 800px){
-    header {
+@media (max-width: 800px) {
+    header, .header-show {
         height: 100px;
         text-align: center;
     }
 
     .nav-item {
+        display: inline;
         font-size: 18px;
         pointer-events: all;
     }
@@ -84,27 +109,38 @@ footer {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     header {
         position: relative;
-        height: 280px;
+        height: 50px;
     }
+
     .nav-item {
         display: block;
         line-height: 200%;
         font-size: 20px;
+        pointer-events: all;
     }
 
-    .nav-item-disabled {
-        visibility: hidden;
-        pointer-events: none;
+    nav {
+        display: none;
     }
 
-    .header-disabled {
-        height: 100px;
+    .nav-show {
+        display: block;
+        pointer-events: all;
+    }
+
+    .header-show {
+        height: 280px;
     }
 
     main {
         height: 200vh;
+    }
+
+    #menu-button {
+        display: inline;
+        font-size: 16px;
     }
 }
