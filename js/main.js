@@ -45,7 +45,7 @@ function init(){
         li.className = 'nav-item';
         li.setAttribute('onclick', 'toggleMenu()');
         li.style.listStyle = "none";
-        li,addEventListener('click', selectPage)
+        li.addEventListener('click', selectPage)
         a.text = e.toUpperCase();
         li.appendChild(a);
         navList.appendChild(li);
@@ -60,7 +60,9 @@ function selectPage(evt){
 }
 
 function flipPage(src){
-    pageContent.setAttribute('data', src);
+    if (pageContent.getAttribute('data') !== src){
+        pageContent.setAttribute('data', src);
+    }
 }
 
 init();
