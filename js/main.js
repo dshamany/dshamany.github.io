@@ -54,7 +54,7 @@ function init(){
 
 function selectPage(evt){
     if (evt.target.tagName === 'A'){
-        let src = `${evt.target.innerText.toLowerCase()}.html`;
+        let src = `html/${evt.target.innerText.toLowerCase()}.html`;
         flipPage(src);
     }
 }
