@@ -1,31 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daniel Shamany</title>
-    <script defer src="js/main.js"></script>
-    <link href="css/main.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Daniel Shamany</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
 
-<body onresize="resetElements()">
-    <header>
-            <h1>Daniel Shamany</h1>
-            <button id="menu-button">
-                <img src="images/open-menu-symbolic.svg">
-            </button>
-        <nav>
-            <ul></ul>
-        </nav>
-    </header>
-    <main>
-        <object id="page-content" type="text/html" data="html/about.html">
+    <body>
+        <div class="nav-container">
+            <h1>
+                Daniel Shamany
+            </h1>
+            <nav class="nav-closed">
+                <ul>
+                    <li class="nav-item"><a href="#about">About Me</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="landing">
+            <div>
+                <p>I'm <span class="red">Daniel Shamany</span>, a Full Stack Web, Mobile, and Backend Developer</p>
+                <div id="skills"> <h3>Skills</h3>ReactJS | NodeJS | Express | JavaScript | CSS | HTML | Python | Django | MongoDB | MySQL | SQL | NoSQL | REST APIs | BCrypt | JWT | C++ | Qt | Object-Oriented-Programming | Data Structures | Design Patterns </div>
+            </div>
+        </div>
+        <div id="about" class="container">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>As a child, I fell in love with computers. It was the first time I had seen one, and she was an IBM
+                    box running Windows 3.1 where the password was entered in the command prompt.</p>
 
-        </object>
-    </main>
-    <footer><p>&copy; 2019 Daniel Shamany</p></footer>
-</body>
+                <p>As I got older, Windows went 95 and I went Mac. Occassionally I would flirt with Linux, but Linux was
+                    a bit immature and mocked by others. As Linux matured, we met again. This time Linux was wearing a
+                    Fedora. We flirted back and forth while
+                    I was with Mac. Eventually Mac was cheated on severeal times until 2017 when we comletely broke up.
+                </p>
+
+                <p>Ever since, I have been with Linux, in an open relationship that allows me to use HTML, CSS, JS, C++,
+                    Python, and even Swift. Since then I have also learned to use MongoDB, NodeJS, React and React
+                    Native. I have flirted with Dart, and extensively
+                    used Bash. With Linux under my belt, I now understand the benfits and shortcommings of both Windows
+                    and Mac.</p>
+
+                <p>My extensive use of VIM on the server-side is coupled with Python and Bash scripting. I've SSHed onto
+                    an AWS server, built backend CRM services, developed an iOS app (on a Mac) using Swift, and provided
+                    fullstack solutions.</p>
+
+                <p>As a freelancer, I have built several solutions for smaller companies on smaller budgets and saved
+                    tons of resources and money. The reason you should contact me is my tenacity, ambition, and the need
+                    to deliver on time and on point.</p>
+            </div>
+        </div>
+        <div class="container" id="projects">
+            <h2>Projects</h2>
+            <div class="flex-container">
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Knowledgebase</h3>
+                        <div class="card-top-content">
+                            <p>This is a general tracker with tools designed to provide data collection for those who like to analyze their daily lives.</p>
+                        </div>
+                        <hr>
+                        <div class="card-bottom-content">
+                            <p>NodeJS | Express | HTML | CSS | JavaScript | Heroku | MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/dshamany/knowledge-base" target="_blank">
+                            Source
+                        </a>
+                        <span class="red">|</span>
+                        <a href="https://ds-knowledge-base.herokuapp.com/"
+                        target="_blank">
+                            Visit
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Watch Collector</h3>
+                        <div class="card-top-content">
+                            <p>This application is for watch collectors to showcase their watches, keep track of service, and connect.</p>
+                        </div>
+                            <hr>
+                            <div class="card-bottom-content">
+                                <p>Python | Django | Materialize | Heroku | PostgreSQL | AWS S3</p>
+                            </div>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/dshamany/watchcollector"
+                        target="_blank">
+                            Source
+                        </a>
+                        <span class="red">|</span>
+                        <a href="https://ds-watchcollector.herokuapp.com/"
+                        target="_blank">
+                            Visit
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Tortuga</h3>
+                        <div class="card-top-content">
+                            <p>This is an application for sailors to find a crew.</p>
+                        </div>
+                        <hr>
+                        <div class="card-bottom-content">
+                            <p>MongoDB | Express | ReactJS | NodeJS | AWS S3 | REST APIs</p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/dshamany/tortuga"
+                        target="_blank">
+                            Source
+                        </a>
+                        <span class="red">|</span>
+                        <a href="https://ds-tor.herokuapp.com/"
+                        target="_blank">
+                            Visit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="container">
+            <div class="content">
+                <h2>Contact</h2>
+
+                <ul class=contact-content>
+                    <li>
+                        <a href="https://github.com/dshamany" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/dshamany" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="mailto:dshamany@gmail.com" target="_blank">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/dshamany" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/150tQx_PP_ImB_D2956B7utFgoVvmeuX7sKn7GmbyNJY/edit?usp=sharing" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-btn"><img id="nav-btn-img" src="menu.png"></div>
+    </body>
+    <footer>
+        &copy; 2020 <a href="https://github.com/dshamany" id="git">Daniel Shamany</a>
+    </footer>
 
 </html>
