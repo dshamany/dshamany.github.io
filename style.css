@@ -23,6 +23,7 @@ body {
     background-attachment: fixed;
     color: #aaa;
     font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -156,7 +157,6 @@ nav ul li a:hover {
 }
 
 #skills {
-    width: 50%;
     margin: 0 auto;
     text-align: justify;
     margin-top: -100px;
@@ -220,7 +220,7 @@ nav ul li a:hover {
 
 .landing {
     height: 100vh;
-    width: 100vw;
+    width: 80%;
     transition: 1s;
     margin: 0 auto;
     text-align: center;
@@ -229,11 +229,9 @@ nav ul li a:hover {
 .landing p {
     position: relative;
     font-size: 28px;
-    word-spacing: 5px;
     padding: 10px;
     text-align: justify;
     overflow: auto;
-    width: 100%;
     max-width: 505px;
     margin: 40vh auto;
 }
@@ -310,10 +308,15 @@ p {
         min-height: 100vh;
         height: max-content;
         margin: 0 auto;
+        padding: 0;
     }
     .content {
-        padding: 50px 10px;
+        padding: 50px 0px;
         transition: 1s;
+        margin: 0;
+    }
+    .contact-content {
+        padding: 0px;
     }
 }
 
