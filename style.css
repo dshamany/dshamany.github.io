@@ -32,7 +32,7 @@ h1 {
     top: -10px;
     background-color: #000;
     color: transparent;
-    text-shadow: 6px 2px 1px rgba(27, 27, 27, 0.5);
+    text-shadow: 3px 2px 3px rgba(34, 34, 34, 0.5);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
