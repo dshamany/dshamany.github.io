@@ -55,7 +55,7 @@ h4,
 h5,
 h6 {
     font-weight: 300;
-    color: rgba(255, 0, 0, 0.5);
+    color: rgba(255, 100, 0, 0.5);
     text-transform: capitalize;
 }
 
@@ -90,7 +90,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgba(255, 0, 0, 0.5);
+    color: rgba(255, 100, 0, 0.5);
 }
 
 #nav-btn {
@@ -142,7 +142,7 @@ nav ul li a:hover {
 
 .contact-content div, #resume {
     margin: 10px;
-    border: 1px solid rgba(255, 0, 0, 0.5);
+    border: 1px solid rgba(255, 100, 0, 0.5);
     border-radius: 5px;
     padding: 10px;
     width: 100px;
@@ -151,7 +151,7 @@ nav ul li a:hover {
 }
 
 .contact-content div:hover, #resume:hover {
-    border: 1px solid red;
+    border: 1px solid orange;
     color: white;
 }
 
@@ -206,7 +206,7 @@ nav ul li a:hover {
 }
 
 .card-action a:hover {
-    color: rgba(255, 0, 0, 0.5);
+    color: rgba(255, 100, 0, 0.5);
     text-decoration: none;
 }
 
@@ -235,12 +235,12 @@ nav ul li a:hover {
     margin: 40vh auto;
 }
 
-.red {
-    color: rgba(255, 0, 0, 0.5);
+.orange {
+    color: rgba(255, 100, 0, 0.5);
 }
 
 #git {
-    color: red;
+    color: orange;
 }
 
 #git:hover {
