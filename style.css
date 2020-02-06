@@ -55,7 +55,7 @@ h4,
 h5,
 h6 {
     font-weight: 300;
-    color: #ff770099;
+    color: #aa4000;
     text-transform: capitalize;
 }
 
@@ -142,7 +142,7 @@ nav ul li a:hover {
 
 .contact-content div, #resume {
     margin: 10px;
-    border: 1px solid #ff770099;
+    border: 1px solid #ff4000;
     border-radius: 5px;
     padding: 10px;
     width: 100px;
