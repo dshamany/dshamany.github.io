@@ -12,7 +12,6 @@ a {
 a:hover {
     cursor: pointer;
     color: #fff;
-    text-decoration: underline;
 }
 
 body {
@@ -90,7 +89,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: orange;
+    color: #ff4000;
 }
 
 #nav-btn {
@@ -143,7 +142,7 @@ nav ul li a:hover {
 .contact-content div, #resume {
     margin: 10px;
     border: 1px solid #ff4000;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 10px;
     width: 100px;
     text-align: center;
@@ -151,7 +150,7 @@ nav ul li a:hover {
 }
 
 .contact-content div:hover, #resume:hover {
-    border: 1px solid orange;
+    background-color: #ff4000;
     color: white;
 }
 
@@ -169,7 +168,7 @@ nav ul li a:hover {
     height: 400px;
     width: 250px;
     border: 1px solid #aaa;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 5px;
 }
 
@@ -206,7 +205,7 @@ nav ul li a:hover {
 }
 
 .card-action a:hover {
-    color: orange;
+    color: #ff4000;
     text-decoration: none;
 }
 
@@ -236,15 +235,7 @@ nav ul li a:hover {
 }
 
 .orange {
-    color: orange;
-}
-
-#git {
-    color: orange;
-}
-
-#git:hover {
-    color: #fff;
+    color: #ff4000;
 }
 
 footer {
