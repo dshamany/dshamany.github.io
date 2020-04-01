@@ -60,7 +60,15 @@ h6 {
 
 .feed-container {
     padding: 30px;
-    margin-top: 50px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.feed-container p {
+    font-size: medium;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-align: justify;
 }
 
 .feed-content {
@@ -141,6 +149,7 @@ nav ul li a:hover {
 .flex-container {
     display: inline-flex;
     width: 100%;
+    max-width: 900px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -325,9 +334,6 @@ p {
     }
     .contact-content {
         padding: 0px;
-    }
-    .flex-container {
-        justify-content: center;
     }
 }
 
