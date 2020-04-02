@@ -196,7 +196,7 @@ nav ul li a:hover {
     border: 0.5px solid #000;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 3px 3px 3px #222, 6px 6px 15px #000 inset;
+    box-shadow: 3px 3px 3px #000, 3px 3px 3px #222 inset;
 }
 
 .card-content {
