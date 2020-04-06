@@ -31,7 +31,7 @@ body p {
 
 h1 a {
     position: fixed;
-    left: 50px;
+    left: 30px;
     margin-top: -10px;
     font-size: 26px;
     text-transform: uppercase;
@@ -40,7 +40,6 @@ h1 a {
     border-radius: 3px;
     transition: 1s;
     outline: none;
-    color: transparent;
     background-color: #111;
     color: transparent;
     text-shadow: 1px 2px 1px #aaaaaaff;
@@ -260,6 +259,8 @@ nav ul li a:hover {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px;
+    font-size: 20px;
+    text-align: justify;
     transition: 1s;
 }
 
@@ -291,12 +292,12 @@ footer {
     padding: 30px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 720px) {
     body {
         padding: 0px;
     }
 
-    h1 {
+    h1 a {
         left: 60px;
         opacity: 0.7;
         transition: 1s;
