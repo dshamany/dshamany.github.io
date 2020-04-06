@@ -6,6 +6,7 @@ html {
 
 a {
     text-decoration: none;
+    outline: none;
     color: #aaa;
 }
 
@@ -20,24 +21,32 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: #aaa;
     font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
     overflow-x: hidden;
 }
 
-h1 {
+body p {
+    color: #999;
+}
+
+h1 a {
     position: fixed;
-    left: 10px;
-    top: -10px;
-    background-color: #000;
+    left: 50px;
+    margin-top: -10px;
+    font-size: 26px;
+    text-transform: uppercase;
+    border: 2px solid #999;
+    padding: 0px 10px 6px 10px;
+    border-radius: 3px;
+    transition: 1s;
+    outline: none;
     color: transparent;
-    text-shadow: 3px 2px 3px rgba(73, 73, 73, 0.5);
+    background-color: #111;
+    color: transparent;
+    text-shadow: 1px 2px 1px #aaaaaaff;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    font-size: 36px;
-    text-transform: uppercase;
-    transition: 1s;
 }
 
 h2 {
@@ -87,7 +96,7 @@ h6 {
 .nav-container {
     position: fixed;
     top: 0;
-    background-color: #111;
+    background-color: inherit;
     width: 100%;
     height: 70px;
     z-index: 100;
@@ -108,6 +117,10 @@ nav ul {
     color: #444;
     display: flex;
     float: right;
+}
+
+nav ul li {
+    position: relative;
 }
 
 nav ul li a {
@@ -165,7 +178,8 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.contact-content div, #resume {
+.contact-content div,
+#resume {
     margin: 10px;
     border: 1px solid #bb4000;
     border-radius: 3px;
@@ -175,7 +189,8 @@ nav ul li a:hover {
     justify-self: center;
 }
 
-.contact-content div:hover, #resume:hover {
+.contact-content div:hover,
+#resume:hover {
     background-color: #bb4000;
     color: white;
 }
@@ -187,13 +202,14 @@ nav ul li a:hover {
     font-family: serif;
     font-size: 18px;
     border-top: 1px solid white;
+    color: #999;
 }
 
 .card {
     margin: 10px;
     height: 400px;
     width: 250px;
-    border: 0.5px solid #000;
+    border: 0.5px solid #111;
     border-radius: 5px;
     padding: 5px;
     box-shadow: 3px 3px 3px #000, 3px 3px 3px #222 inset;
@@ -218,7 +234,8 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.card-top-content, .card-bottom-content {
+.card-top-content,
+.card-bottom-content {
     text-align: justify;
 }
 
@@ -280,12 +297,14 @@ p {
     body {
         padding: 0px;
     }
+
     h1 {
         top: -12px;
         left: 60px;
         opacity: 1;
         transition: 1s;
     }
+
     nav {
         position: fixed;
         top: 0;
@@ -298,40 +317,49 @@ p {
         max-width: 320px;
         transition: 0.7s;
     }
+
     .nav-open {
         left: 0px;
         opacity: 1;
     }
+
     .nav-closed {
         left: -110vw;
         opacity: 0;
     }
+
     #nav-btn {
         visibility: visible;
     }
+
     #nav-btn:hover {
         color: #444;
         cursor: pointer;
     }
+
     nav ul {
         display: block;
         transition: ease-in-out;
         float: left;
     }
+
     nav ul li {
         margin: 50px 10px;
     }
+
     .container {
         min-height: 100vh;
         height: max-content;
         margin: 0 auto;
         padding: 0;
     }
+
     .content {
         padding: 50px 0px;
         transition: 1s;
         margin: 0;
     }
+
     .contact-content {
         padding: 0px;
     }
