@@ -1,205 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Daniel Shamany | Official Site</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daniel Shamany | Official Site</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-</head>
-
-<body>
-    <div class="nav-container">
-        <div id="logo">
-            <a href="#">
-                <img src="ds_logo.svg">
-            </a>
+    <body>
+        <div class="nav-container">
+            <div id="logo">
+                <a href="#">
+                    <img src="ds_logo.svg" />
+                </a>
+            </div>
+            <nav class="nav-closed">
+                <ul>
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#about">About Me</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav-closed">
-            <ul>
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#projects">Projects</a></li>
-                <li class="nav-item"><a href="#about">About Me</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="landing">
-        <p id="landing-description">I'm <span class="main-color">Daniel Shamany</span>, a <span class="sec-color">Full Stack</span>, 
-            <span class="sec-color">Mobile</span>, and <span class="sec-color">Desktop</span> Developer</p>
-        <div id="skills">
-            <h3>Skills</h3>
-            <p>
-                React Native | ReactJS | NodeJS | ExpressJS | JavaScript | CSS | HTML | Python | Django | MongoDB |
-                MySQL | SQL | NoSQL | REST APIs | bcrypt | JWT | PassportJS | AWS S3 | AWS EC2 | C++ | Qt | Linux | Mac
-                | Windows | RHEL | Fedora | CentOS | Git | Vim | Docker | Object Oriented Programming | Data Structures
-                | Design Patterns
+        <div class="landing">
+            <p id="landing-description">
+                I'm <span class="main-color">Daniel Shamany</span>, a
+                <span class="sec-color">Full Stack</span>,
+                <span class="sec-color">Mobile</span>, and
+                <span class="sec-color">Desktop</span> Developer
             </p>
-        </div>
-    </div>
-    <div id="projects" class="container">
-        <div class="content">
-            <h2>Projects</h2>
-            <div class="flex-container">
-
-                <p>The projects below consist of demos and proofs of concept.</p>
-                <br>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>DS Utils</h3>
-                        <div class="card-top-content">
-                            <p>A collection of utilities and helper libraries for C++ Projects.</p>
-                        </div>
-                        <hr>
-                        <div class="card-bottom-content">
-                            <p>C++ | GCC | Clang</p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/dshamany/ds" target="_blank">
-                            Source
-                        </a>
-                        <span class="orange">|</span>
-                        <a href="https://github.com/dshamany/ds" target="_blank">
-                            Visit
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Knowledgebase</h3>
-                        <div class="card-top-content">
-                            <p>This is a general tracker with tools designed to provide data collection for those who
-                                like to analyze their daily lives.</p>
-                        </div>
-                        <hr>
-                        <div class="card-bottom-content">
-                            <p>NodeJS | ExpressJS | PassportJS | JavaScript | CSS | HTML | Heroku | MongoDB</p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/dshamany/knowledge-base" target="_blank">
-                            Source
-                        </a>
-                        <span class="orange">|</span>
-                        <a href="https://ds-knowledge-base.herokuapp.com/" target="_blank">
-                            Visit
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-content">
-                        <h3>BlackJack</h3>
-                        <div class="card-top-content">
-                            <p>My take on a classic Black Jack game with a classic look and feel.</p>
-                        </div>
-                        <hr>
-                        <div class="card-bottom-content">
-                            <p>HTML | CSS | JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/dshamany/BlackJack" target="_blank">
-                            Source
-                        </a>
-                        <span class="orange">|</span>
-                        <a href="https://danielshamany.com/BlackJack" target="_blank">
-                            Visit
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Watch Collector</h3>
-                        <div class="card-top-content">
-                            <p>This application is for watch collectors to showcase their watches, keep track of
-                                service, and connect.</p>
-                        </div>
-                        <hr>
-                        <div class="card-bottom-content">
-                            <p>Python | Django | Materialize | Heroku | PostgreSQL | AWS S3</p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/dshamany/watchcollector" target="_blank">
-                            Source
-                        </a>
-                        <span class="orange">|</span>
-                        <a href="https://ds-watchcollector.herokuapp.com/" target="_blank">
-                            Visit
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Tortuga</h3>
-                        <div class="card-top-content">
-                            <p>This is an application for sailors to find a crew.</p>
-                        </div>
-                        <hr>
-                        <div class="card-bottom-content">
-                            <p>MongoDB | ExpressJS | ReactJS | NodeJS | bcrypt | AWS S3 | REST APIs | Heroku</p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/dshamany/tortuga" target="_blank">
-                            Source
-                        </a>
-                        <span class="orange">|</span>
-                        <a href="https://ds-tor.herokuapp.com/" target="_blank">
-                            Visit
-                        </a>
-                    </div>
-                </div>
-
+            <div id="skills">
+                <h3>Skills</h3>
+                <p>
+                    React Native | ReactJS | NodeJS | ExpressJS | JavaScript |
+                    CSS | HTML | Python | Django | MongoDB | MySQL | SQL | NoSQL
+                    | REST APIs | bcrypt | JWT | PassportJS | AWS S3 | AWS EC2 |
+                    C++ | Qt | Linux | Mac | Windows | RHEL | Fedora | CentOS |
+                    Git | Vim | Docker | Object Oriented Programming | Data
+                    Structures | Design Patterns
+                </p>
             </div>
         </div>
-    </div>
-    <div id="about" class="container">
-        <div class="content">
-            <h2>About Me</h2>
-            <p>I have tremendous passion for programming; consequently resulting in
-                a well rounded skill set paired with a self starter attitude.</p>
-            <p>My hobbies include reading books, long walks, and the occasional social setting to name a few.</p>
-            <p>Below, you will find my latest resume, so if I am in the job market, it is available for your
-                consumption.</p>
-            <a href="./Resume.docx" download>
-                <div id=resume>Resume</div>
-            </a>
+        <div id="projects" class="container">
+            <div class="content">
+                <h2>Projects</h2>
+                <div class="flex-container">
+                    <div id="projects-desc">
+                        <p>
+                            The projects below consist of demos and proofs of
+                            concept.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>DS Utils</h3>
+                            <div class="card-top-content">
+                                <p>
+                                    A collection of utilities and helper
+                                    libraries for C++ Projects.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="card-bottom-content">
+                                <p>C++ | GCC | Clang</p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a
+                                href="https://github.com/dshamany/ds"
+                                target="_blank"
+                            >
+                                Source
+                            </a>
+                            <span class="orange">|</span>
+                            <a
+                                href="https://github.com/dshamany/ds"
+                                target="_blank"
+                            >
+                                Visit
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Knowledgebase</h3>
+                            <div class="card-top-content">
+                                <p>
+                                    This is a general tracker with tools
+                                    designed to provide data collection for
+                                    those who like to analyze their daily lives.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="card-bottom-content">
+                                <p>
+                                    NodeJS | ExpressJS | PassportJS | JavaScript
+                                    | CSS | HTML | Heroku | MongoDB
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a
+                                href="https://github.com/dshamany/knowledge-base"
+                                target="_blank"
+                            >
+                                Source
+                            </a>
+                            <span class="orange">|</span>
+                            <a
+                                href="https://ds-knowledge-base.herokuapp.com/"
+                                target="_blank"
+                            >
+                                Visit
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>BlackJack</h3>
+                            <div class="card-top-content">
+                                <p>
+                                    My take on a classic Black Jack game with a
+                                    classic look and feel.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="card-bottom-content">
+                                <p>HTML | CSS | JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a
+                                href="https://github.com/dshamany/BlackJack"
+                                target="_blank"
+                            >
+                                Source
+                            </a>
+                            <span class="orange">|</span>
+                            <a
+                                href="https://danielshamany.com/BlackJack"
+                                target="_blank"
+                            >
+                                Visit
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Watch Collector</h3>
+                            <div class="card-top-content">
+                                <p>
+                                    This application is for watch collectors to
+                                    showcase their watches, keep track of
+                                    service, and connect.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="card-bottom-content">
+                                <p>
+                                    Python | Django | Materialize | Heroku |
+                                    PostgreSQL | AWS S3
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a
+                                href="https://github.com/dshamany/watchcollector"
+                                target="_blank"
+                            >
+                                Source
+                            </a>
+                            <span class="orange">|</span>
+                            <a
+                                href="https://ds-watchcollector.herokuapp.com/"
+                                target="_blank"
+                            >
+                                Visit
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Tortuga</h3>
+                            <div class="card-top-content">
+                                <p>
+                                    This is an application for sailors to find a
+                                    crew.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="card-bottom-content">
+                                <p>
+                                    MongoDB | ExpressJS | ReactJS | NodeJS |
+                                    bcrypt | AWS S3 | REST APIs | Heroku
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a
+                                href="https://github.com/dshamany/tortuga"
+                                target="_blank"
+                            >
+                                Source
+                            </a>
+                            <span class="orange">|</span>
+                            <a
+                                href="https://ds-tor.herokuapp.com/"
+                                target="_blank"
+                            >
+                                Visit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="contact" class="container">
-        <div class="content">
-            <h2>Contact</h2>
-
-            <div class=contact-content>
-                <a href="https://github.com/dshamany" target="_blank">
-                    <div>Github</div>
-                </a>
-
-                <a href="https://www.linkedin.com/in/dshamany" target="_blank">
-                    <div>LinkedIn</div>
-                </a>
-                <a href="https://www.twitter.com/dshamany" target="_blank">
-                    <div>Twitter</div>
-                </a>
-                <a href="mailto:dshamany@gmail.com" target="_blank">
-                    <div>Email</div>
+        <div id="about" class="container">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>
+                    I have tremendous passion for programming; consequently
+                    resulting in a well rounded skill set paired with a self
+                    starter attitude.
+                </p>
+                <p>
+                    My hobbies include reading books, long walks, and the
+                    occasional social setting to name a few.
+                </p>
+                <p>
+                    Below, you will find my latest resume, so if I am in the job
+                    market, it is available for your consumption.
+                </p>
+                <a href="./Resume.docx" download>
+                    <div id="resume">Resume</div>
                 </a>
             </div>
         </div>
-    </div>
+        <div id="contact" class="container">
+            <div class="content">
+                <h2>Contact</h2>
 
-    <div id="nav-btn"><img id="nav-btn-img" src="menu.png"></div>
-</body>
-<footer>
-    &copy; 2020 <a href="https://github.com/dshamany" id="git">Daniel Shamany</a>
-</footer>
+                <div class="contact-content">
+                    <a href="https://github.com/dshamany" target="_blank">
+                        <div>Github</div>
+                    </a>
 
+                    <a
+                        href="https://www.linkedin.com/in/dshamany"
+                        target="_blank"
+                    >
+                        <div>LinkedIn</div>
+                    </a>
+                    <a href="https://www.twitter.com/dshamany" target="_blank">
+                        <div>Twitter</div>
+                    </a>
+                    <a href="mailto:dshamany@gmail.com" target="_blank">
+                        <div>Email</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="nav-btn"><img id="nav-btn-img" src="menu.png" /></div>
+    </body>
+    <footer>
+        &copy; 2020
+        <a href="https://github.com/dshamany" id="git">Daniel Shamany</a>
+    </footer>
 </html>

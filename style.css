@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700|IBM+Plex+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700|IBM+Plex+Serif&display=swap");
 
 :root {
     --main-color: #00aa00;
@@ -33,7 +33,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+    font-family: "Quicksand", Verdana, Tahoma, sans-serif;
     overflow-x: hidden;
 }
 
@@ -92,7 +92,7 @@ nav {
     position: fixed;
     top: 5px;
     right: 25px;
-    font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+    font-family: "Quicksand", Verdana, Tahoma, sans-serif;
     font-size: 18px;
     width: 100%;
     transition: ease-in-out;
@@ -136,7 +136,6 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-
 .container {
     padding: 30px;
     min-height: 100vh;
@@ -153,6 +152,10 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
+}
+
+#projects-desc {
+    width: 100%;
 }
 
 .contact-content {
@@ -356,7 +359,7 @@ footer {
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     .container {
         margin-top: 100px;
         justify-content: center;
