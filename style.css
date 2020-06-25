@@ -59,19 +59,6 @@ h6 {
     text-transform: capitalize;
 }
 
-.feed-container {
-    padding: 30px;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
-.feed-container p {
-    font-size: medium;
-    font-weight: lighter;
-    font-family: sans-serif;
-    text-align: justify;
-}
-
 .date p {
     color: var(--main-color);
     font-family: monospace;
@@ -267,7 +254,7 @@ nav ul li a:hover {
     padding: 10px;
     text-align: justify;
     overflow: auto;
-    max-width: 340px;
+    max-width: 360px;
     margin: 34vh auto;
 }
 
