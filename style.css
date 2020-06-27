@@ -3,6 +3,7 @@
 :root {
     --main-color: #00aa00;
     --sec-color: #0066ff;
+    --neutral-color: #999999;
 }
 
 html {
@@ -38,15 +39,17 @@ body {
 }
 
 body p {
-    color: #999;
+    color: var(--neutral-color);
 }
 
 h2 {
     font-size: 48px;
+    color: var(--main-color);
 }
 
 h3 {
     font-size: 28px;
+    color: var(--main-color);
 }
 
 h2,
@@ -55,7 +58,6 @@ h4,
 h5,
 h6 {
     font-weight: 300;
-    color: var(--main-color);
     text-transform: capitalize;
 }
 
@@ -186,7 +188,7 @@ nav ul li a:hover {
 .card {
     margin: 10px;
     height: 400px;
-    width: 250px;
+    width: 260px;
     border: 0.5px solid #111;
     border-radius: 5px;
     padding: 5px;
@@ -204,7 +206,7 @@ nav ul li a:hover {
 
 .card-top-content {
     height: 100px;
-    margin: 15px 0;
+    margin: 40px 0;
 }
 
 .card-bottom-content {
