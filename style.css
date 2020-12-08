@@ -48,12 +48,6 @@ h2 {
 }
 height: 3vw;
 
-h3 {
-    font-size: 28px;
-    color: var(--main-color);
-
-}
-
 h2,
 h3,
 h4,
@@ -61,6 +55,12 @@ h5,
 h6 {
     font-weight: 300;
     text-transform: capitalize;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 28px;
+    color: var(--main-color);
 }
 
 .date p {
@@ -286,9 +286,8 @@ footer {
 
     #logo {
         position: fixed;
-        left: 50px;    height: 3vw;
-
-        margin-top: 0px;
+        left: 50px;    
+        height: 3vw;
         transition: 1s;
     }
 
